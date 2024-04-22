@@ -4,7 +4,392 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>your Order - Brothers Chappal Makers</title>
-    <link rel="stylesheet" href="order.css">
+    <style>
+        .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+header{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    width: fit-content;
+    margin-left: 30%;
+    display: flex;
+}
+.menu-button{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.link:hover{
+    color: yellow;
+    box-shadow: 0 2px yellow;
+    transform: rotateY(360deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    margin: 10px;
+    transition: 1s;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.search-input{
+    width: 180px;
+    height: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgb(213, 211, 211);
+    text-align: center;
+}
+.icon{
+    font-size: 18px;
+    color: white;
+    transition: 0.7s;
+}
+.icon:hover{
+    transform: rotateY(360deg);
+    cursor: pointer;
+    color: white;
+}
+.ic{
+    border: 2px solid rgb(213, 211, 211);
+    height: 27.5px;
+    width: 28px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    border-left: transparent;
+    background-color: orange;
+}
+.ic:hover{
+    background-color: transparent;
+}
+.cart1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+
+}
+.cart:hover{
+    transform: rotate(360deg);
+}
+.cart2{
+    font-size: 25px;
+    color: red;
+    margin-right: 3px;
+}
+
+body{
+    background-image: url("https://kaisz.pk/wp-content/uploads/2022/05/sku1201-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.border{
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-left: 80px;
+    margin-top: 60px;
+    border: 2px solid rgb(86, 85, 85);
+    box-shadow: 4px 6px red;
+    backdrop-filter: blur(30px);
+    overflow: auto;
+}
+.title1{
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(21, 190, 247);
+    text-shadow: 2px 2px red;
+}
+.name1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.name{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.input{
+    text-align: center;
+    width: 160px;
+    height: 25px;
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.radio{
+    display: flex;
+}
+.name12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.submit1{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: 1s;
+}
+.submit1:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: red;
+    font-size: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.clear{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: 1s;
+}
+.clear:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: red;
+    font-size: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+footer{
+    margin-top: 150px;
+    height: 400px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+}
+.border222{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+}
+.title{
+    margin-top: 50px;
+    margin-left: 130px;
+    color: white;
+    font-size: 18px;
+}
+.contact{
+    margin-left: 132px;
+}
+.link222{
+    text-decoration: none;
+}
+.link222:hover{
+    text-decoration: underline;
+}
+li{
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    list-style: none;
+}
+.border223{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+    margin-left: 60px;
+}
+.whatsapp{
+    color: green;
+    margin-right: 5px;
+}
+.messenger{
+    color: rgb(122, 122, 251);
+    margin-right: 5px;
+}
+.phone{
+    color: green;
+    margin-right: 5px;
+}
+@media only screen and (max-width: 1100px){
+    body{
+        background-color: white;
+    }
+    .border{
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+        background-color: transparent;
+        margin-left: 0;
+        margin-top: 20px;
+        border: 2px solid rgb(86, 85, 85);
+        box-shadow: 4px 6px red;
+        backdrop-filter: blur(30px);
+        overflow: auto;
+    }
+    .title1{
+        font-size: 26px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(21, 190, 247);
+        text-shadow: 2px 2px red;
+    }
+    .name1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .name{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+    .input{
+        text-align: center;
+        width: 160px;
+        height: 17px;
+        background-color: transparent;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+    .radio{
+        display: flex;
+    }
+    .name12{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .submit{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .submit1{
+        font-size: 23px;
+        color: black;
+        font-weight: bold;
+        margin-right: 30px;
+        transition: 1s;
+    }
+    .submit1:hover{
+        border: 2px solid black;
+        background-color: transparent;
+        color: red;
+        font-size: 30px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .clear{
+        font-size: 23px;
+        color: black;
+        font-weight: bold;
+        margin-right: 30px;
+        transition: 1s;
+    }
+    .clear:hover{
+        border: 2px solid black;
+        background-color: transparent;
+        color: red;
+        font-size: 30px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+
+
+
+    footer{
+        margin-top: 30px;
+        height: 300px;
+        background-color: rgb(40, 39, 39);
+        display: flex;
+    }
+    .border222{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+    }
+    .title{
+        margin-top: 15px;
+        margin-left: 15px;
+        color: white;
+        font-size: 14px;
+    }
+    .contact{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .link222{
+        text-decoration: none;
+    }
+    .link222:hover{
+        text-decoration: underline;
+    }
+    li{
+        color: white;
+        font-size: 14px;
+        margin: 5px;
+        list-style: none;
+    }
+    .border223{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+        margin-left: 60px;
+    }
+    .whatsapp{
+        color: green;
+        margin-right: 5px;
+    }
+    .messenger{
+        color: rgb(122, 122, 251);
+        margin-right: 5px;
+    }
+    .phone{
+        color: green;
+        margin-right: 5px;
+    }
+}
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
