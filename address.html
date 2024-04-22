@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+        .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+header{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    width: fit-content;
+    margin-left: 30%;
+    display: flex;
+}
+.menu-button{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.link:hover{
+    color: yellow;
+    box-shadow: 0 2px yellow;
+    transform: rotateY(360deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    margin: 10px;
+    transition: 1s;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.search-input{
+    width: 180px;
+    height: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgb(213, 211, 211);
+    text-align: center;
+}
+.icon{
+    font-size: 18px;
+    color: white;
+    transition: 0.7s;
+}
+.icon:hover{
+    transform: rotateY(360deg);
+    cursor: pointer;
+    color: white;
+}
+.ic{
+    border: 2px solid rgb(213, 211, 211);
+    height: 27.5px;
+    width: 28px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    border-left: transparent;
+    background-color: orange;
+}
+.ic:hover{
+    background-color: transparent;
+}
+.cart1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+
+}
+.cart:hover{
+    transform: rotate(360deg);
+}
+.cart2{
+    font-size: 25px;
+    color: red;
+    margin-right: 3px;
+}
+
+
+
+
+
+body{
+    background-color: pink;
+}
+.title1{
+    font-size: 50px;
+    font-family: cursive,Arial, Helvetica, sans-serif;
+    text-shadow: 2px 3px grey;
+    color: red;
+}
+strong{
+    color: blue;
+    font-size: 25px;
+    font-weight: 550;
+}
+.paragraph{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+.map{
+    font-size: 210px;
+    color: red;
+    text-shadow: 4px 6px green;
+    transition: 0.4s;
+}
+.map:hover{
+    color: green;
+    text-shadow: 4px 6px red;
+    cursor: pointer;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+}
+.images{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.image{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+.image:nth-child(1){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIly6-BNTC1evBVwcDu0iKGHKnA-awMqm2tEQRdChXQ&s");
+}
+.image:nth-child(2){
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bacha_Khan_Square_In_Charsadda.jpg/800px-Bacha_Khan_Square_In_Charsadda.jpg");
+}
+.image:nth-child(3){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ogAL2UQAfeunHgOdAMyXJptxp-9CKFOY2HjjqxQ-zA&s");
+}
+.image:nth-child(4){
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDUisINuhf6ZODXtzYBc7iUQ2hAd6n-u_uRFfEo5IWQ&s");
+}
+.image:hover{
+    flex: 4;
+}
+footer{
+    margin-top: 150px;
+    height: 400px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+}
+.border222{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+}
+.title{
+    margin-top: 50px;
+    margin-left: 130px;
+    color: white;
+    font-size: 18px;
+}
+.contact{
+    margin-left: 132px;
+}
+.link222{
+    text-decoration: none;
+}
+.link222:hover{
+    text-decoration: underline;
+}
+li{
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    list-style: none;
+}
+.border223{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+    margin-left: 60px;
+}
+.whatsapp{
+    color: green;
+    margin-right: 5px;
+}
+.messenger{
+    color: rgb(122, 122, 251);
+    margin-right: 5px;
+}
+.phone{
+    color: green;
+    margin-right: 5px;
+}
+@media only screen and (max-width:1100px){
+    .title1{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px grey;
+        color: red;
+    }
+    strong{
+        color: blue;
+        font-size: 17px;
+        font-weight: 550;
+    }
+    .paragraph{
+        font-size: 17px;
+        color: black;
+        font-weight: 600;
+    }
+    .map{
+        font-size: 100px;
+        color: red;
+        text-shadow: 4px 6px green;
+        transition: 0.4s;
+    }
+    .map:hover{
+        color: green;
+        text-shadow: 4px 6px red;
+        cursor: pointer;
+    }
+    .border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .images{
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 30px;
+        height: 300px;
+        background-color: rgb(40, 39, 39);
+        display: flex;
+    }
+    .border222{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+    }
+    .title{
+        margin-top: 15px;
+        margin-left: 15px;
+        color: white;
+        font-size: 14px;
+    }
+    .contact{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .link222{
+        text-decoration: none;
+    }
+    .link222:hover{
+        text-decoration: underline;
+    }
+    li{
+        color: white;
+        font-size: 14px;
+        margin: 5px;
+        list-style: none;
+    }
+    .border223{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+        margin-left: 60px;
+    }
+    .whatsapp{
+        color: green;
+        margin-right: 5px;
+    }
+    .messenger{
+        color: rgb(122, 122, 251);
+        margin-right: 5px;
+    }
+    .phone{
+        color: green;
+        margin-right: 5px;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/10/85/b5/1085b574133bc3b2f29e71c2ea8193bf.jpg" alt="" class="logo">
+        <div class="menu">
+            <a href="index.html" class="link" title="Home Page"><p class="menu-buttons">Home</p></a>
+            <a href="address.html" class="link" title="Your Address"><p class="menu-buttons">Address</p></a>
+            <a href="items.html" class="link" title="Select Items"><p class="menu-buttons">Items</p></a>
+            <a href="order.html" class="link" title="Place Your Order"><p class="menu-buttons">Orders</p></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Your Item" class="search-input">
+            <div class="ic">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+            <a href="order.html">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping cart2"></i>
+                    <p class="cart1">Cart</p>
+                    
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="border">
+        <div class="text">
+            <h1 class="title1">Address</h1>
+            <p class="paragraph"><strong>Ghafoor Market</strong> Mardan Road <br>
+            2<sup>nd</sup> Floor 
+        Shop #20<br>Tehseel Charsadda</p>
+        
+        </div>
+        <i class="fa-solid fa-location-dot map"></i>
+    </div>
+    <div class="images">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+    <footer>
+        <div class="border222">
+            <p class="title">
+                Contact Us
+            </p>
+            <ul class="contact">
+                <li><i class="fa-brands fa-whatsapp whatsapp"></i><a href="https://wa.me/923148283148?text=Hi%20I%20am%20interested%20in%20your%20product!%20Can%20we%20talk" target="_blank" class="link222">WhatsApp</a>
+                </li>
+                <li><i class="fa-brands fa-facebook-messenger messenger"></i><a href="https://www.messenger.com/t/61551725827688" target="_blank" class="link222">Messenger</a>
+                </li>
+                <li><i class="fa-solid fa-phone-volume phone"></i>0314 8283148</li>
+            </ul>
+        </div>
+
+
+
+        <div class="border223">
+            <p class="title">
+                Types
+            </p>
+            <ul class="contact">
+                <li><a href="gogo.html" class="link222">Gogo Chappal</a></li>
+                <li><a href="kaptaan.html" class="link222">Kaptaan Chappal</a></li>
+                <li><a href="golt.html" class="link222">Golty</a></li>
+                <li><a href="zalmi.html" class="link222">Zalmi Chappal</a></li>
+                <li><a href="smart zalmi.html" class="link222">Smart Zalmi Chappal</a></li>
+                <li><a href="zardari.html" class="link222">Zardari Chappal</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

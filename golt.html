@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gol T Chappal - Brothers Chappal Makers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+header{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    width: fit-content;
+    margin-left: 30%;
+    display: flex;
+}
+.menu-button{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.link:hover{
+    color: yellow;
+    box-shadow: 0 2px yellow;
+    transform: rotateY(360deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    margin: 10px;
+    transition: 1s;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.search-input{
+    width: 180px;
+    height: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgb(213, 211, 211);
+}
+.icon{
+    font-size: 18px;
+    color: white;
+    transition: 0.7s;
+}
+.icon:hover{
+    transform: rotateY(360deg);
+    cursor: pointer;
+    color: white;
+}
+.ic{
+    border: 2px solid rgb(213, 211, 211);
+    height: 27.5px;
+    width: 28px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    border-left: transparent;
+    background-color: orange;
+}
+.ic:hover{
+    background-color: transparent;
+}
+.cart1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+
+}
+.cart:hover{
+    transform: rotate(360deg);
+}
+.cart2{
+    font-size: 25px;
+    color: red;
+    margin-right: 3px;
+}
+
+
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+    margin-top: 70px;
+    margin-left: 140px;
+}
+.item{
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    transition: 1s;
+}
+.item:nth-child(1){
+    background-image: url("https://kherihouse.com/cdn/shop/products/WhatsAppImage2021-11-24at11.55.27AM_1_5fec8942-be12-44a3-aa6e-20ff7fc24cd2_800x.jpg?v=1638280966");
+}
+.item:nth-child(2){
+    background-image: url("https://darkfitter.com/cdn/shop/files/8133EC93-D0E6-4629-ACD1-5FF1CD7F13AD.jpg?v=1712069124&width=1920");
+}
+.item:nth-child(3){
+    background-image: url("https://classfitters.com/cdn/shop/products/doubleshadefinal.png?v=1703864450&width=1946");
+}
+.item:nth-child(4){
+    background-image: url("https://kherihouse.com/cdn/shop/products/WhatsAppImage2021-11-24at11.55.27AM_6fa217e0-00cb-4db7-87f6-8c5c81c64d36_800x.jpg?v=1638280899");
+}
+.item:nth-child(5){
+    background-image: url("https://darkfitter.com/cdn/shop/files/3AC3EA0C-B9BB-4A05-B616-49AB773F9F79.jpg?v=1712069238&width=1920");
+}
+.item:hover{
+    flex: 5;
+}
+.text{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.borders1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.black-color{
+    width: 350px;
+    height: 430px;
+    background: rgb(215, 213, 213);
+}
+.image{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+.font{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.black-font{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    margin-top: 150px;
+    height: 400px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+}
+.border222{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+}
+.title{
+    margin-top: 50px;
+    margin-left: 130px;
+    color: white;
+    font-size: 18px;
+}
+.contact{
+    margin-left: 132px;
+}
+.link222{
+    text-decoration: none;
+}
+.link222:hover{
+    text-decoration: underline;
+}
+li{
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    list-style: none;
+}
+.border223{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+    margin-left: 60px;
+}
+.whatsapp{
+    color: green;
+    margin-right: 5px;
+}
+.messenger{
+    color: rgb(122, 122, 251);
+    margin-right: 5px;
+}
+.phone{
+    color: green;
+    margin-right: 5px;
+}
+@media only screen and (max-width:1100px){
+    .gallery{
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .text{
+        font-size: 19px;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .borders1{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .black-color{
+        width: 90%;
+        height: auto;
+        background: rgb(215, 213, 213);
+    }
+    .image{
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .font{
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .black-font{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        margin-top: 30px;
+        height: 300px;
+        background-color: rgb(40, 39, 39);
+        display: flex;
+    }
+    .border222{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+    }
+    .title{
+        margin-top: 15px;
+        margin-left: 15px;
+        color: white;
+        font-size: 14px;
+    }
+    .contact{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .link222{
+        text-decoration: none;
+    }
+    .link222:hover{
+        text-decoration: underline;
+    }
+    li{
+        color: white;
+        font-size: 14px;
+        margin: 5px;
+        list-style: none;
+    }
+    .border223{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+        margin-left: 60px;
+    }
+    .whatsapp{
+        color: green;
+        margin-right: 5px;
+    }
+    .messenger{
+        color: rgb(122, 122, 251);
+        margin-right: 5px;
+    }
+    .phone{
+        color: green;
+        margin-right: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/10/85/b5/1085b574133bc3b2f29e71c2ea8193bf.jpg" alt="" class="logo">
+        <div class="menu">
+            <a href="index.html" class="link" title="Home Page"><p class="menu-buttons">Home</p></a>
+            <a href="address.html" class="link" title="Your Address"><p class="menu-buttons">Address</p></a>
+            <a href="items.html" class="link" title="Select Items"><p class="menu-buttons">Items</p></a>
+            <a href="order.html" class="link" title="Place Your Order"><p class="menu-buttons">Orders</p></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Your Item" class="search-input">
+            <div class="ic">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+            <a href="order.html">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping cart2"></i>
+                    <p class="cart1">Cart</p>
+                    
+                </div>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="gallery">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <p class="text">Here We have the following colors in Gol T Chappal</p>
+
+    <div class="borders1">
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://tribalculture.pk/wp-content/uploads/2022/11/IMG_2578-scaled-1200x800-1-min.jpg" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">Black Color</p>
+            </div>
+        </div>
+
+
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://kherihouse.com/cdn/shop/products/WhatsAppImage2021-11-24at11.55.27AM_1_5fec8942-be12-44a3-aa6e-20ff7fc24cd2_800x.jpg?v=1638280966" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">Brown Color</p>
+            </div>
+        </div>
+
+
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://i.pinimg.com/736x/a8/99/1c/a8991c2a13cdc3439fc4f2c37f70cb62.jpg" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">Blue Color</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="borders1">
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://classfitters.com/cdn/shop/products/doubleshadefinal.png?v=1703864450&width=1946" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">Dark Brown Color</p>
+            </div>
+        </div>
+
+
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://kherihouse.com/cdn/shop/products/WhatsAppImage2021-11-24at11.55.29AM_2_1024x.jpg?v=1638280476" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">Orange Color</p>
+            </div>
+        </div>
+
+
+        <div class="black-color">
+            <div class="black-image">
+                <img src="https://www.maancraft.com/cdn/shop/files/3_d216423a-9ba1-49f2-9e87-9d19342313da.jpg?v=1711049531&width=1080" alt="" class="image">
+            </div>
+            <div class="black-font">
+                <p class="font">White Color</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="border222">
+            <p class="title">
+                Contact Us
+            </p>
+            <ul class="contact">
+                <li><i class="fa-brands fa-whatsapp whatsapp"></i><a href="https://wa.me/923148283148?text=Hi%20I%20am%20interested%20in%20your%20product!%20Can%20we%20talk" target="_blank" class="link222">WhatsApp</a>
+                </li>
+                <li><i class="fa-brands fa-facebook-messenger messenger"></i><a href="https://www.messenger.com/t/61551725827688" target="_blank" class="link222">Messenger</a>
+                </li>
+                <li><i class="fa-solid fa-phone-volume phone"></i>0314 8283148</li>
+            </ul>
+        </div>
+
+
+
+        <div class="border223">
+            <p class="title">
+                Types
+            </p>
+            <ul class="contact">
+                <li><a href="gogo.html" class="link222">Gogo Chappal</a></li>
+                <li><a href="kaptaan.html" class="link222">Kaptaan Chappal</a></li>
+                <li><a href="golt.html" class="link222">Golty</a></li>
+                <li><a href="zalmi.html" class="link222">Zalmi Chappal</a></li>
+                <li><a href="smart zalmi.html" class="link222">Smart Zalmi Chappal</a></li>
+                <li><a href="zardari.html" class="link222">Zardari Chappal</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

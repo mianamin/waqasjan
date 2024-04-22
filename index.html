@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother Chappal Makers</title>
+    <style>
+        .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+header{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    width: fit-content;
+    margin-left: 30%;
+    display: flex;
+}
+.menu-button{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.link:hover{
+    color: yellow;
+    box-shadow: 0 2px yellow;
+    transform: rotateY(360deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.link{
+    margin: 10px;
+    transition: 1s;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.search-input{
+    width: 180px;
+    height: 25px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgb(213, 211, 211);
+    text-align: center;
+}
+.icon{
+    font-size: 18px;
+    color: white;
+    transition: 0.7s;
+}
+.icon:hover{
+    transform: rotateY(360deg);
+    cursor: pointer;
+    color: white;
+}
+.ic{
+    border: 2px solid rgb(213, 211, 211);
+    height: 27.5px;
+    width: 28px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    border-left: transparent;
+    background-color: orange;
+}
+.ic:hover{
+    background-color: transparent;
+}
+.cart1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cart{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+
+}
+.cart:hover{
+    transform: rotate(360deg);
+}
+.cart2{
+    font-size: 25px;
+    color: red;
+    margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+    margin-left: 150px;
+    /* border: 2px solid black; */
+
+}
+.item{
+    flex: 1;
+    height: 100%;
+}
+.item:nth-child(1){
+    background-image: url("https://leatherhub.pk/cdn/shop/products/3-3-4.jpg?v=1683405066");
+}
+.item:nth-child(2){
+    background-image: url("https://laylooo.pk/cdn/shop/products/GoldenPeshawari6_2048x2048.jpg?v=1693412761");
+}
+.item:nth-child(3){
+    background-image: url("https://faiznorozi.pk/wp-content/uploads/2021/06/DSC_9320_compressed-scaled-1-600x600.jpg");
+}
+.item:nth-child(4){
+    background-image: url("https://www.famousnagra.com/wp-content/uploads/2022/04/Product-972-01.jpg");
+}
+.item:nth-child(5){
+    background-image: url("https://localmafia.pk/cdn/shop/products/WhatsAppImage2023-05-11at12.16.21PM_740x.jpg?v=1704636888");
+}
+.item{
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+.item:hover{
+    flex: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 150px;
+    height: 400px;
+    background-color: rgb(40, 39, 39);
+    display: flex;
+}
+.border222{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+}
+.title{
+    margin-top: 50px;
+    margin-left: 130px;
+    color: white;
+    font-size: 18px;
+}
+.contact{
+    margin-left: 132px;
+}
+.link222{
+    text-decoration: none;
+}
+.link222:hover{
+    text-decoration: underline;
+}
+li{
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+    list-style: none;
+}
+.border223{
+    border: 2px solid rgb(40, 39, 39);
+    width: fit-content;
+    height: fit-content;
+    margin-left: 60px;
+}
+.whatsapp{
+    color: green;
+    margin-right: 5px;
+}
+.messenger{
+    color: rgb(122, 122, 251);
+    margin-right: 5px;
+}
+.phone{
+    color: green;
+    margin-right: 5px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+}
+.Name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-left: 10px;
+}
+.Name1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 65px;
+    color: red;
+}
+.whole-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+.explain{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.chappal-image{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    transition: 1s;
+}
+.chappal-image:hover{
+    transform: scale(1.1);
+}
+.image-text{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.text-and-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 40px;
+}
+.item-button{
+    border: 2px solid rgb(74, 74, 74);
+    background-color: rgb(74, 74, 74);
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+    border-radius: 8px;
+}
+.item-button:hover{
+    background-color: transparent;
+    color: black;
+    transform: rotateY(360deg);
+}
+.link2222{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    color: blue;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.item-link:hover .arrow{
+    margin-left: 20px;
+}
+.item-link{
+    font-size: 20px;
+    color: blue;
+    transition: 1s;
+    transform: none;
+}
+.link2222:hover .arrow{
+    margin-left: 10px;
+}
+.title2{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: red;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+
+
+.span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 1100px){
+    .gallery{
+        width: 100%;
+        height: 200px;
+        margin-left: 0;
+    }
+    .whole-intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    .explain{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .chappal-image{
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .image-text{
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .text-and-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+        border: 2px solid black;
+    }
+    .item-button{
+        border: 2px solid rgb(74, 74, 74);
+        background-color: rgb(74, 74, 74);
+        color: white;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        transition: 1s;
+        border-radius: 8px;
+    }
+    .Name{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .Name1{
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 30px;
+        color: red;
+    }
+    .link2222{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow{
+        color: blue;
+        margin-left: 3px;
+        font-size: 10px;
+    }
+    .item-link{
+        font-size: 14px;
+        color: blue;
+    }
+    .title2{
+        font-size: 25px;
+        text-transform: uppercase;
+        color: red;
+        font-family: cursive, Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 30px;
+        height: 300px;
+        background-color: rgb(40, 39, 39);
+        display: flex;
+    }
+    .border222{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+    }
+    .title{
+        margin-top: 15px;
+        margin-left: 15px;
+        color: white;
+        font-size: 14px;
+    }
+    .contact{
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .link222{
+        text-decoration: none;
+    }
+    .link222:hover{
+        text-decoration: underline;
+    }
+    li{
+        color: white;
+        font-size: 14px;
+        margin: 5px;
+        list-style: none;
+    }
+    .border223{
+        border: 2px solid rgb(40, 39, 39);
+        width: fit-content;
+        height: fit-content;
+        margin-left: 60px;
+    }
+    .whatsapp{
+        color: green;
+        margin-right: 5px;
+    }
+    .messenger{
+        color: rgb(122, 122, 251);
+        margin-right: 5px;
+    }
+    .phone{
+        color: green;
+        margin-right: 5px;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        
+        <img src="https://i.pinimg.com/736x/10/85/b5/1085b574133bc3b2f29e71c2ea8193bf.jpg" alt="" class="logo">
+        
+        <div class="menu">
+            <a href="index.html" class="link" title="Home Page"><p class="menu-buttons">Home</p></a>
+            <a href="address.html" class="link" title="Your Address"><p class="menu-buttons">Address</p></a>
+            <a href="items.html" class="link" title="Select Items"><p class="menu-buttons">Items</p></a>
+            <a href="order.html" class="link" title="Place Your Order"><p class="menu-buttons">Orders</p></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Your Item" class="search-input">
+            <div class="ic">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+            <a href="order.html">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping cart2"></i>
+                    <p class="cart1">Cart</p>
+                    
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="gallery" id="home">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="whole-intro">
+        <div class="intro">
+            <h1 class="Name1">Brothers</h1><h1 class="Name"> Chappal Makers</h1>
+        </div>
+        <p class="explain">We are so glad you visited our website. <br>
+            Inshallah, you will find all kinds of goods here. <br>
+            Our price is much lower than the market price</p>
+            <a href="items.html"><h1 class="item-button">Items</h1></a>
+    </div>
+
+
+
+    <div class="text-and-image">
+        <div class="span">
+            <h1 class="title2">Our Quality</h1>
+            <p class="image-text">We never compromise on the quality of our products. <br> We use high quality leather And all other materials which is used in our products</p>
+            <div class="link2222">
+                <a href="items.html" class="learn"><p class="item-link">Click This for More Impormation</p></a>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </div>
+        </div>
+        <img src="https://seengar.com/wp-content/uploads/2021/03/004-Maroon-Red-3.jpg" alt="" class="chappal-image">
+        
+    </div>
+
+
+
+
+    <div class="text-and-image">
+        <img src="https://www.khanchappals.pk/cdn/shop/products/B612_20220316_021244_581_1200x1200.jpg?v=1648162615" alt="" class="chappal-image">
+        <div class="span">
+            <h1 class="title2">Our Products</h1>
+            <p class="image-text">These products are made by famous artisans of<br>Charsadda . Which is not famous only in KPK but also famous in all over the world.
+            </p>
+            <div class="link2222">
+                <a href="items.html" class="learn"><p class="item-link">Click This for More Impormation</p></a>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+
+    <div class="text-and-image">
+        
+        <div class="span">
+            <h1 class="title2">Address</h1>
+            <p class="image-text">The address of our shop is<br>Ghafoor Market 2<sup>nd</sup> Floor shop # 20 Mardan Road Charsadda</p>
+            <div class="link2222">
+                <a href="items.html" class="learn"><p class="item-link">Click This for More Impormation</p></a>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </div>
+        </div>
+        <img src="https://www.khanchappals.pk/cdn/shop/products/GN1.jpg?v=1660982722" alt="" class="chappal-image">
+        
+    </div>
+
+
+
+
+    
+
+
+    <footer>
+        <div class="border222">
+            <p class="title">
+                Contact Us
+            </p>
+            <ul class="contact">
+                <li><i class="fa-brands fa-whatsapp whatsapp"></i><a href="https://wa.me/923148283148?text=Hi%20I%20am%20interested%20in%20your%20product!%20Can%20we%20talk" target="_blank" class="link222">WhatsApp</a>
+                </li>
+                <li><i class="fa-brands fa-facebook-messenger messenger"></i><a href="https://www.messenger.com/t/61551725827688" target="_blank" class="link222">Messenger</a>
+                </li>
+                <li><i class="fa-solid fa-phone-volume phone"></i>0314 8283148</li>
+            </ul>
+        </div>
+
+
+
+        <div class="border223">
+            <p class="title">
+                Types
+            </p>
+            <ul class="contact">
+                <li><a href="gogo.html" class="link222">Gogo Chappal</a></li>
+                <li><a href="kaptaan.html" class="link222">Kaptaan Chappal</a></li>
+                <li><a href="golt.html" class="link222">Golty</a></li>
+                <li><a href="zalmi.html" class="link222">Zalmi Chappal</a></li>
+                <li><a href="smart zalmi.html" class="link222">Smart Zalmi Chappal</a></li>
+                <li><a href="zardari.html" class="link222">Zardari Chappal</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
