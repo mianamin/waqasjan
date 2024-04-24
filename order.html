@@ -110,14 +110,22 @@ a{
 }
 
 body{
-    background-image: url("https://kaisz.pk/wp-content/uploads/2022/05/sku1201-scaled.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/756/300/37/light-background-wallpaper-preview.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+.main-border{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 .border{
     width: 450px;
     height: 550px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: transparent;
     margin-left: 80px;
     margin-top: 60px;
@@ -416,58 +424,60 @@ li{
         </div>
     </header>
 
-    <div class="border">
-        <h1 class="title1">Thanks For Your Order</h1>
-        <div class="name1">
-            <label for="name" class="name">Name:</label>
-            <input type="text" placeholder="Your Full Name" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Address:</label>
-            <input type="text" placeholder="Your Full Address" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Mobile Number:</label>
-            <input type="number" placeholder="Your Mobile Number" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Zip Code:</label>
-            <input type="number" placeholder="Zip Code" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Item:</label>
-            <input type="text" placeholder="Item Name" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Quantity:</label>
-            <input type="number" placeholder="Number of Items" class="input">
-        </div><br>
-        <div class="name1">
-            <label for="name" class="name">Color:</label>
-            <input type="color" placeholder="Number of Items" class="input">
-        </div><br>
-        <div class="name12">
-            <label for="name" class="name">Payment Method:</label>
-            <div class="radio">
-                <input type="radio" name="payment" id="easypaisa"><label for="easypaisa">Easypaisa</label>
+    <div class="main-border">
+        <div class="border">
+            <h1 class="title1">Thanks For Your Order</h1>
+            <div class="name1">
+                <label for="name" class="name">Name:</label>
+                <input type="text" placeholder="Your Full Name" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Address:</label>
+                <input type="text" placeholder="Your Full Address" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Mobile Number:</label>
+                <input type="number" placeholder="Your Mobile Number" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Zip Code:</label>
+                <input type="number" placeholder="Zip Code" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Item:</label>
+                <input type="text" placeholder="Item Name" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Quantity:</label>
+                <input type="number" placeholder="Number of Items" class="input">
+            </div><br>
+            <div class="name1">
+                <label for="name" class="name">Color:</label>
+                <input type="color" placeholder="Number of Items" class="input">
+            </div><br>
+            <div class="name12">
+                <label for="name" class="name">Payment Method:</label>
+                <div class="radio">
+                    <input type="radio" name="payment" id="easypaisa"><label for="easypaisa">Easypaisa</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="payment" id="jazzcash"><label for="jazzcash">Jazz Cash</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="payment" id="upaisa"><label for="upaisa">Upaisa</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="payment" id="raast"><label for="raast">Raast</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="payment" id="cash"><label for="cash">Cash on delivery</label>
+                </div>
             </div>
-            <div class="radio">
-                <input type="radio" name="payment" id="jazzcash"><label for="jazzcash">Jazz Cash</label>
+            <br><br>
+            <div class="submit">
+                <h1 class="submit1">Submit</h1>
+                <h1 class="clear">Clear</h1>
             </div>
-            <div class="radio">
-                <input type="radio" name="payment" id="upaisa"><label for="upaisa">Upaisa</label>
-            </div>
-            <div class="radio">
-                <input type="radio" name="payment" id="raast"><label for="raast">Raast</label>
-            </div>
-            <div class="radio">
-                <input type="radio" name="payment" id="cash"><label for="cash">Cash on delivery</label>
-            </div>
-        </div>
-        <br><br>
-        <div class="submit">
-            <h1 class="submit1">Submit</h1>
-            <h1 class="clear">Clear</h1>
         </div>
     </div>
 
